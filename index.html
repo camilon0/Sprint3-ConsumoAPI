@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <nav class="nav">
+          <figure class="img">
+            <img src="./images/Fill 3.png" alt="logo" />
+          </figure>
+          <h1 class="title">casaRoyal</h1>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="#" class="nav-link nav-menu-link">HOMEPAGE</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-link nav-menu-link">PROPERTIES</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-link nav-menu-link">AGENCIES</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-link nav-menu-link">PAGES</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-link nav-menu-link">ABOUT</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-link nav-menu-link">CONTACT</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-link nav-menu-link-dos">SUBMIT LISTING</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-dos">
+        <nav>
+          <a href="./pages/favorites.html">Ir a favoritos</a>
+        </nav>
+        <aside id="contaionerForm" class="hidden">
+          <label class="search">
+            <div class="buscador">
+              <label for="tipo">Type</label>
+              <select name="type" id="select1">
+                <option value="" selected disabled>Seleccione tipo</option>
+                <option value="House">Casa</option>
+                <option value="Local">Local Comercial</option>
+                <option value="Apartment">Apartamento</option>
+              </select>
+            </div>
+            <div class="buscador">
+              <label for="location">Location</label>
+              <select name="location" id="select2">
+                <option value="" selected disabled>Seleccione locacion</option>
+                <option value="Calasanz">Calasanz</option>
+                <option value="La America">La America</option>
+                <option value="Robledo">Robledo</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit" class="btn-find" id="search">
+                FIND PROPERTIES
+              </button>
+            </div>
+          </label>
+        </aside>
+      </div>
+    </div>
+    <main id="main">
+      <section class="items" id="items"></section>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
